@@ -7,6 +7,7 @@ d = {
     'grape': 12
 }
 
+
 key = input()
 if key in d:
     print(d[key])
