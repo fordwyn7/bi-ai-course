@@ -1,1 +1,3 @@
-# This is file list24.py
+lst = list(input().split())
+length = len(lst)
+print(length)

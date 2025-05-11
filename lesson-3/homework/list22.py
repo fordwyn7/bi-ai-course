@@ -1,7 +1,7 @@
 lst = list(map(int, input().split()))
-arr = []
-for i in lst:
-    if i % 2 == 0:
-        arr.append(i)
+even_numbers = []
+for num in lst:
+    if num % 2 == 0:
+        even_numbers.append(num)
         
-print(*arr)
+print(*even_numbers)

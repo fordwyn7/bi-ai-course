@@ -1,3 +1,3 @@
 lst = list(input().split())
-new = lst.copy()
-print(*new)
+tpl = tuple(lst)
+print(tpl)

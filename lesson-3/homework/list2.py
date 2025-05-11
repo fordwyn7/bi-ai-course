@@ -1,3 +1,3 @@
 lst = list(map(int, input().split()))
-sm = sum(lst)
-print(sm)
+sum_of_numbers = sum(lst)
+print(sum_of_numbers)

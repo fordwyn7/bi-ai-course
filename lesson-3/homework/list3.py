@@ -1,5 +1,5 @@
 lst = list(map(int, input().split()))
 
-max_num = max(lst)
+max_number = max(lst)
 
-print(max_num)
+print(max_number)
