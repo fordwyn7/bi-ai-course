@@ -29,8 +29,7 @@ with sqlite3.connect('library.db') as conn:
             UPDATE Books SET Year_Published = 1950 WHERE Title = '1984'
         """
     )
-    
-    # Selecting all books published before 1950
+    # Selecting all records where Genre is 'Dystopian'
     cursor.execute(
         """
             SELECT Title, Author FROM Books WHERE Genre = 'Dystopian'
@@ -40,7 +39,7 @@ with sqlite3.connect('library.db') as conn:
     for row in data:
         print(f"Title: {row[0]}, Author: {row[1]}")
     
-    # Deleting all records where Year is greater than 2000
+    # Deleting all records where Year is lower than 1950 
     cursor.execute(
         """
             DELETE FROM Books WHERE Year_Published < 1950
